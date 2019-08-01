@@ -1,0 +1,114 @@
+{% extends "base-left.html" %}
+{% load staticfiles %}
+
+{% block title %}运维后台管理系统{% endblock %}
+
+{% block content %}
+
+
+    <section class="content-header">
+        <h1>
+
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i>当前位置</a></li>
+            <li><a href="#"><i class="fa fa-dashboard"></i>可拓展</a></li>
+            <li><a href="{% url 'new-xiangmu' %}"><i class="fa fa-dashboard"></i>首页</a></li>
+        </ol>
+    </section>
+
+    <div class="pad margin no-print">
+        <p></p>
+        <div class="callout callout-info" style="margin-bottom: 0!important;">
+            <h4><i class="fa  fa-info-circle"></i> 公告信息:
+                <h1>
+                    <small>当前位置：</small>
+                    运维系统后台管理界面
+                </h1>
+            </h4>
+        </div>
+    </div>
+
+
+    <section class="invoice">
+        <!-- title row -->
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="page-header">
+                    <i class="fa fa-gears"></i> 功能介绍:
+                </h2>
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- info row -->
+        <div class="row invoice-info">
+            <div class="col-sm-4 invoice-col">
+                <b>模块说明</b>
+                <p>
+                    项目管理：用户信息<br>
+                </p>
+            </div>
+
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </section>
+
+    <!-- Main content -->
+    <section class="invoice">
+        <!-- title row -->
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="page-header">
+                    <i class="fa fa-telegram"></i> 信息一览:
+                </h2>
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- info row -->
+        <div class="row invoice-info">
+            <div class="col-sm-4 invoice-col">
+                <b>平台定位</b>
+                <p>
+                    <strong></strong><br>
+                    致力于成为专业的运维系统平台<br>
+                    为用户提供专业、全面的安全服务<br>
+                    点滴专注、值得信赖<br>
+                    <strong></strong><br>
+                </p>
+            </div>
+            <!-- /.col -->
+            <div class="col-sm-4 invoice-col">
+                <b>平台文化</b>
+                <p>
+                    <strong></strong><br>
+                    以质量求生存，以服务促发展<br>
+                    追求客户满意，是你我的责任<br>
+                    强化竞争意识，营造团队精神<br>
+                    <strong></strong><br>
+
+                </p>
+            </div>
+            <!-- /.col -->
+            <div class="col-sm-4 invoice-col">
+                <b>通信方式</b><br>
+                <br>
+                <b>电话:</b> 15855530790<br>
+                <b>邮箱:</b> cinyann@163.com<br>
+                <b>地址:</b> 上海市
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </section>
+    <!-- /.content -->
+
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript">
+        $(function () {
+            $('#index').addClass('active');
+        });
+    </script>
+{% endblock %}
